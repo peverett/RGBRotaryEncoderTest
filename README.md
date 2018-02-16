@@ -24,12 +24,13 @@ longer be accurate.
 ## Construction
 
 This is the breadboard construction, it's not very tidy but it works.
-![breadboard-1](Rotary_Encoder_Breadboard.jpeg)
+
+![breadboard-1](images/Rotary_Encoder_Breadboard.jpeg)
 
 And here is a tidier diagram of the connections between the RGB Rotary Encoder
 and Arduino Nano.
 
-![circuit-1](Nono_and_RGB_Rotary_Enc.jpg)
+![circuit-1](images/Nono_and_RGB_Rotary_Enc.jpg)
 
 Note the resistor pulling down the wire from 'SW' on the Rotary Encoder Breakout
 board. I found this necessary to stop the input floating around.
