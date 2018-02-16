@@ -41,7 +41,7 @@ byte prev_enc_a=0;
 
 enum SelectLed { red, green, blue, last };
 SelectLed selected = red;
-byte ledVal[3] = { 0, 0, 0 };         // All start at 0, which is full ON.
+byte ledVal[3] = { 255, 255, 255 };   // All start at 255, which is OFF.
 const byte ledPin[3] = { 11, 10, 9 }; // D11, D10, D9
 
 void setup() {
