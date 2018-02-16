@@ -108,15 +108,18 @@ shows the same thing, I just didn't understand it at the time.
 
 ### The SW Pin Floats
 
-Pressing the encoder knob down should activate the 'SW' pin. I has it hooked as
-a simple digital input but the problem was that when I rotated the knob it was
-as if the switch was activating all the time.
+Pressing the encoder knob down should activate the 'SW' pin. I had it connected
+as a simple digital input but the problem was that when I rotated the knob it 
+was as if the switch was activating all the time.
 
 Putting a PRINT on the pin read value showed the issue. 
 * When pushed down it was a steady 1 (HIGH)
 * When not pushed down, the input floated between 1 and 0 (HIGH and LOW).
 
-The fix was to add a 10KR Resistor between the SW pin and ground.  
+The fix was to add a 10KR Resistor between the SW pin and ground. You can 
+configure Arduino Inputs to be Pullup inputs (e.g. HIGH when they float) but
+not Pulldown inputs (LOW when the float). This is what adding the resistor 
+does.  
 
 
 
